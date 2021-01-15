@@ -1,0 +1,114 @@
+en:
+  activerecord:
+    attributes:
+      approved_ca:
+        cert_profile_info: "Información del perfil del certificado"
+      approved_tsa:
+        url: "URL del servidor de sello de tiempo"
+        cert: "Certificado de servidor de sello de tiempo"
+      central_service:
+        service_code: "código de servicio central"
+      distributed_files:
+        original_filename_last_successful: "nombre original del archivo cargado"
+        original_filename_last_failed: "nombre original del archivo cargado"
+      distributed_signed_files:
+        data_boundary: "límite de datos"
+        sig_algo_id: "ID del algoritmo de firma"
+      federated_xroad:
+        code: "código"
+        address: "Dirección"
+      global_group:
+        group_code: "código de grupo"
+        description: "descripción del grupo"
+      identifier:
+        object_type: "tipo de objeto"
+        xroad_instance: "instancia de Tenoli(X-Road)"
+        member_class: "clase de miembro"
+        member_code: "código de miembro"
+        subsystem_code: "código del subsistema"
+        service_code: "código de servicio"
+        server_code: "código del servidor"
+        type: "type"
+        service_version: "versión del servicio"
+      member_class_mapping:
+        federated_member_class: "clase de miembro federado"
+      member_class:
+        code: "código"
+        description: "descripción"
+      ocsp_info:
+        url: "URL"
+      pki:
+        name: "nombre"
+        identifier_decoder_member_class: "clase extractor de nombres"
+        identifier_decoder_method_name: "método extractor de nombres"
+      request_processing:
+        type: "tipo"
+        status: "estado"
+      request:
+        type: "tipo"
+        address: "dirección"
+        origin: "origen"
+        server_owner_name: "nombre del propietario del servidor"
+        server_user_name: "nombre de usuario del servidor"
+      xroad_member:
+        member_code: "código de miembro"
+        name: "nombre de miembro"
+      security_category:
+        code: "código"
+        description: "descripción"
+      security_category_mapping:
+        federated_category: "categoría federada"
+      security_server_client_name:
+        name: "nombre"
+      security_server_client:
+        subsystem_code: "código del subsistema"
+        type: "type"
+        administrative_contact: "Contacto administrativo"
+      security_server:
+        server_code: "código del servidor"
+        address: "dirección "
+      system_parameter:
+        key: "llave"
+        value: "valor"
+      ui_user:
+        username: "usuario"
+        locale: "idioma"
+    errors:
+      invalid_url: "'%{url}' es una URL no válida, ejemplos de URLs: 'http://www.example.com', 'https://www.example.com'"
+      input_too_long: "puede contener hasta %{max_length} símbolos"
+      messages:
+        taken: "'%{value}' ya ha sido tomado"
+        blank: "%{attribute} no puede estar en blanco"
+        record_invalid: "%{errors}"
+
+  # Management requests error messages.
+  requests:
+    server_not_found: "Servidor no encontrado: %{server}"
+    multiple_open_requests: "Más de una solicitud está abierta para el servidor %{server_id}, id de la otra solicitud: '%{request_id}'"
+    invalid_processing_state: "El procesamiento de la solicitud está en un estado no válido: %{status}"
+    duplicate_requests: "Ya se ha enviado una solicitud para registrar '%{user}',  como cliente al servidor de seguridad '%{security_server}' (%{received},  ID de solicitud: '%{id}')"
+    client_already_registered: "'%{user}' ya se ha registrado como cliente en el servidor de seguridad '%{security_server}'"
+    more_than_one_requests: "Error interno: se encontraron solicitudes duplicadas en la base de datos"
+    client_not_found: "Cliente no encontrado: %{client}"
+    request_with_same_cert_already_exists: "El certificado ya se envió para el registro con la solicitud '%{id}'"
+    security_server_exists: "El certificado ya está registrado, solicitud de id '%{id}'"
+    duplicate_owner_change_requests: "Ya se ha enviado una solicitud para registrar '%{user}', como propietario del servidor de seguridad '%{security_server}'(%{received}, ID de solicitud: '%{id}')"
+    must_be_member: "'%{user}' es un subsistema. El nuevo propietario debe ser un miembro registrado"
+    already_owner: "'%{user}' ya es el propietario del servidor de seguridad '%{security_server}'"
+    server_code_exists: "%{member_code}' ya posee un servidor de seguridad con el código de servidor '%{server_code}'"
+    not_registered_client: "'%{user}' no está registrado como cliente en el servidor de seguridad  '%{security_server}'"
+
+  errors:
+    format: "%{message}"
+    member_class:
+      member_class_has_members: "No se puede eliminar la clase %{code}: se encontraron miembros de que pertenecen a esa clase. Solo se pueden eliminar las clases que no tienen miembros registrados"
+    pki:
+      top_ca_cert_too_long_subject_name: "El tamaño del sujeto del certificado de CA que está intentando cargar excede %{max_length} caracteres. Texto del sujeto: '%{subject_name}'"
+    tsp:
+      cert_and_url_exists: "Ya existe un servicio de sello de tiempo aprobado con el mismo URL y  certificado"
+      cert_too_long_subject_name: "El tamaño del sujeto del certificado de TSA que está intentando cargar excede %{max_length} caracteres. Texto del sujeto:'%{subject_name}'"
+    request:
+      auth_cert_not_unique: "El servidor de seguridad '%{server_id}' ya tiene el certificado de autenticación que está intentando agregar"
+      cert_not_auth: "Este certificado no se puede usar para la autenticación."
+    import:
+      invalid_content: "El contenido del archivo cargado '%{file}' no está en formato gzip"
