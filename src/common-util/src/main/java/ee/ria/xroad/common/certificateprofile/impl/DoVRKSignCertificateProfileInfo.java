@@ -28,7 +28,7 @@ package ee.ria.xroad.common.certificateprofile.impl;
 import ee.ria.xroad.common.certificateprofile.DnFieldDescription;
 import ee.ria.xroad.common.certificateprofile.SignCertificateProfileInfo;
 import ee.ria.xroad.common.identifier.ClientId;
-import ee.ria.xroad.common.util.FISubjectClientIdDecoder;
+import ee.ria.xroad.common.util.DOSubjectClientIdDecoder;
 
 import java.security.cert.X509Certificate;
 
@@ -73,7 +73,7 @@ public class DoVRKSignCertificateProfileInfo
     }
     @Override
     public ClientId getSubjectIdentifier(X509Certificate certificate) {
-        return FISubjectClientIdDecoder.getSubjectClientId(certificate);
+        return DOSubjectClientIdDecoder.getSubjectClientId(certificate);
     }
 
 }

@@ -70,7 +70,7 @@ public final class DOSubjectClientIdDecoder {
     /*
      * The encoding for clientID:
      * <ul>
-     *  <li>C = FI (country code must be 'FI' when using this decoder)</li>
+     *  <li>C = DO (country code must be 'DO' when using this decoder)</li>
      *  <li>O = organization (must be present)
      *  <li>CN = memberCode (business code without "Y" prefix)</li>
      *  <li>serialNumber = instanceIdentifier;serverCode;memberClass
@@ -121,7 +121,7 @@ public final class DOSubjectClientIdDecoder {
     /*
      * The legacy encoding for clientID:
      * <ul>
-     *  <li>C = FI (country code must be 'FI' when using this decoder)</li>
+     *  <li>C = DO (country code must be 'DO' when using this decoder)</li>
      *  <li>O = instanceId</li>
      *  <li>OU = memberClass</li>
      *  <li>CN = memberCode (business code without "Y" prefix)</li>
