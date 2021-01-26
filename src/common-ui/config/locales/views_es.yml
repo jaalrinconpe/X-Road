@@ -2,7 +2,7 @@ es:
   common:
     accept: "Guardar"
     add: "Agregar"
-    advanced_search: "Búsqueda Advanzada"
+    advanced_search: "Búsqueda avanzada"
     apply: "Aplicar"
     approve: "Aprobar"
     back: "Regresar"
@@ -37,7 +37,7 @@ es:
     restore: "Restaurar"
     revert: "Revertir"
     revoke: "Revocar"
-    save: "guardar"
+    save: "Guardar"
     search: "Buscar"
     select: "Seleccionar"
     select_all: "Seleccionar/limpiar todo"
@@ -48,7 +48,7 @@ es:
     warning: "<div class='align-center'>{{text}}</div>"
     zero_records: "No se encontraron coincidencias"
     zero_records_none: "Ninguno"
-    language: "Language (%{current})"
+    language: "Lenguaje (%{current})"
     enter_pin: "Ingrese PIN"
     pin: "PIN"
     'yes': "Sí"
@@ -58,7 +58,7 @@ es:
     url: "URL"
 
   errors:
-   server_unreachable: "No fue posible alcanzar al servidor, asegúrese de que el servidor este disponible."
+   server_unreachable: "No fue posible acceder al servidor, asegúrese de que el servidor esté disponible."
 
   layouts:
     application:
@@ -89,7 +89,7 @@ es:
       console_output: "Salida de la Consola de Respaldo"
       token_logout_notice: "Durante la restauración, los tokens de seguridad deben cerrar su sesión."
       upload_file_title: "Subir Nuevo Archivo de Respaldo"
-      uploaded_file_exists: "El alrchivo de respaldo '{{file}}' ya existe, ¿desea sobre escribirlo?"
+      uploaded_file_exists: "El archivo de respaldo '{{file}}' ya existe, ¿desea sobre escribirlo?"
 
   restore:
     index:

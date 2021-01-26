@@ -7,75 +7,75 @@ en:
         url: "URL del servidor de sello de tiempo"
         cert: "Certificado de servidor de sello de tiempo"
       central_service:
-        service_code: "código de servicio central"
+        service_code: "Código de servicio central"
       distributed_files:
-        original_filename_last_successful: "nombre original del archivo cargado"
-        original_filename_last_failed: "nombre original del archivo cargado"
+        original_filename_last_successful: "Nombre original del archivo cargado"
+        original_filename_last_failed: "Nombre original del archivo cargado"
       distributed_signed_files:
-        data_boundary: "límite de datos"
+        data_boundary: "Límite de datos"
         sig_algo_id: "ID del algoritmo de firma"
       federated_xroad:
-        code: "código"
+        code: "Código"
         address: "Dirección"
       global_group:
-        group_code: "código de grupo"
-        description: "descripción del grupo"
+        group_code: "Código de grupo"
+        description: "Descripción del grupo"
       identifier:
-        object_type: "tipo de objeto"
-        xroad_instance: "instancia de Tenoli(X-Road)"
-        member_class: "clase de miembro"
-        member_code: "código de miembro"
-        subsystem_code: "código del subsistema"
-        service_code: "código de servicio"
-        server_code: "código del servidor"
+        object_type: "Tipo de objeto"
+        xroad_instance: "Instancia de Tenoli(X-Road)"
+        member_class: "Clase de miembro"
+        member_code: "Código de miembro"
+        subsystem_code: "Código del subsistema"
+        service_code: "Código de servicio"
+        server_code: "Código del servidor"
         type: "type"
-        service_version: "versión del servicio"
+        service_version: "Versión del servicio"
       member_class_mapping:
-        federated_member_class: "clase de miembro federado"
+        federated_member_class: "Clase de miembro federado"
       member_class:
-        code: "código"
-        description: "descripción"
+        code: "Código"
+        description: "Descripción"
       ocsp_info:
         url: "URL"
       pki:
-        name: "nombre"
-        identifier_decoder_member_class: "clase extractor de nombres"
-        identifier_decoder_method_name: "método extractor de nombres"
+        name: "Nombre"
+        identifier_decoder_member_class: "Clase extractor de nombres"
+        identifier_decoder_method_name: "Método extractor de nombres"
       request_processing:
-        type: "tipo"
-        status: "estado"
+        type: "Tipo"
+        status: "Estado"
       request:
-        type: "tipo"
-        address: "dirección"
-        origin: "origen"
-        server_owner_name: "nombre del propietario del servidor"
-        server_user_name: "nombre de usuario del servidor"
+        type: "Tipo"
+        address: "Dirección"
+        origin: "Origen"
+        server_owner_name: "Nombre del propietario del servidor"
+        server_user_name: "Nombre de usuario del servidor"
       xroad_member:
-        member_code: "código de miembro"
-        name: "nombre de miembro"
+        member_code: "Código de miembro"
+        name: "Nombre de miembro"
       security_category:
-        code: "código"
-        description: "descripción"
+        code: "Código"
+        description: "Descripción"
       security_category_mapping:
-        federated_category: "categoría federada"
+        federated_category: "Categoría federada"
       security_server_client_name:
-        name: "nombre"
+        name: "Nombre"
       security_server_client:
-        subsystem_code: "código del subsistema"
+        subsystem_code: "Código del subsistema"
         type: "type"
         administrative_contact: "Contacto administrativo"
       security_server:
-        server_code: "código del servidor"
-        address: "dirección "
+        server_code: "Código del servidor"
+        address: "Dirección"
       system_parameter:
-        key: "llave"
-        value: "valor"
+        key: "Llave"
+        value: "Valor"
       ui_user:
-        username: "usuario"
-        locale: "idioma"
+        username: "Usuario"
+        locale: "Idioma"
     errors:
       invalid_url: "'%{url}' es una URL no válida, ejemplos de URLs: 'http://www.example.com', 'https://www.example.com'"
-      input_too_long: "puede contener hasta %{max_length} símbolos"
+      input_too_long: "Puede contener hasta %{max_length} símbolos"
       messages:
         taken: "'%{value}' ya ha sido tomado"
         blank: "%{attribute} no puede estar en blanco"

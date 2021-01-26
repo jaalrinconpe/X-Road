@@ -285,7 +285,7 @@ es:
     authentication_only: "Esta AC sólo puede ser utilizada para autenticación TLS"
     authentication_only_hint: "(Marque si aplica)"
     cert_profile_info: "Información de Perfil de Certificado"
-    cert_profile_info_hint: "(Nombre de la clase para lectura de certificados \n ee.ria.xroad.common.certificateprofile.impl.TENOLICertificateProfileInfoProvider)"
+    cert_profile_info_hint: "(Nombre de la clase para lectura de certificados \n ee.ria.xroad.common.certificateprofile.impl.DoVRKCertificateProfileInfoProvider)"
     intermediate_cas: "AC Intermedias"
     intermediate_ca: "AC Intermedia"
     intermediate_ca_details: "Detalles de AC Intermedia"
